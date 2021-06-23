@@ -329,7 +329,7 @@ AC_DEFUN([OPENJ9_CONFIGURE_CRIU_SUPPORT],
 [
   AC_MSG_CHECKING([for CRIU support])
   AC_ARG_ENABLE([criu-support], [AS_HELP_STRING([--enable-criu-support], [enable CRIU support @<:@disabled@:>@])])
-  OPENJ9_ENABLE_CRIU_SUPPORT=false
+  OPENJ9_ENABLE_CRIU_SUPPORT=true
 
   if test "x$enable_criu_support" = xyes ; then
     AC_MSG_RESULT([yes (explicitly enabled)])
