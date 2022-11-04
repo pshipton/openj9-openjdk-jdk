@@ -1553,7 +1553,7 @@ public class ObjectInputStream
             event.commit();
         }
         if (serialFilter != null && (status == null || status == ObjectInputFilter.Status.REJECTED)) {
-            throw new InvalidClassException("filter status: " + status, ex);
+            throw new InvalidClassException("filter status: " + status + " " + clazz, ex);
         }
     }
 
